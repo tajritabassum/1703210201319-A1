@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Employee;
 class EmployeeTableSeeder extends Seeder
 {
     /**
@@ -11,6 +11,6 @@ class EmployeeTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Employee::class, 100)->create();
     }
 }
